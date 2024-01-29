@@ -1,0 +1,6 @@
+.header {
+  display: flex; }
+  .header .logo {
+    width: 5rem; }
+    .header .logo img {
+      width: 100%; }

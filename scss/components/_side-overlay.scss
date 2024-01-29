@@ -1,0 +1,35 @@
+.side-overlay {
+  width: 30vw;
+  height: 100vh;
+  background-color: $color-primary;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0vw;
+
+  z-index: 10;
+  padding: 25rem 5rem;
+  color: lighten(black, 10%);
+  // position: relative;
+
+  .icon {
+    font-size: 3rem;
+    position: absolute;
+    top: 15%;
+    right: 25%;
+  }
+
+  &__text {
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+  }
+
+  &__title {
+    margin: 3rem;
+    font-size: $font-lg;
+  }
+
+  .btn--small {
+    margin: auto;
+  }
+}

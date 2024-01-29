@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  color: white; }
+
+li {
+  padding: 0 1rem;
+  margin: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  font-family: "DM Sans", sans-serif; }
+
+h1,
+h2,
+h3 {
+  margin: 3rem 0 1.5rem 0;
+  line-height: 1.5;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-family: "Space Grotesk", sans-serif; }
+
+p {
+  line-height: 1.5; }
+
+.main-nav {
+  margin: 1rem 0;
+  color: white; }
+  .main-nav ul {
+    width: 100%; }
+    @media screen and (min-width: 1024px) {
+      .main-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        opacity: 1;
+        max-height: 100rem;
+        color: white; }
+        .main-nav ul .btn, .main-nav ul .btn--small {
+          display: none; } }
+  .main-nav li {
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 1.5rem 0; }
+  .main-nav .btn, .main-nav .btn--small {
+    margin: 3rem 0 3rem 0;
+    width: fit-content; }
+
+.btn, .btn--small {
+  background: #1b1b1b;
+  background: linear-gradient(90deg, #525252 0%, white 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 2.6rem;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: black; }
+  .btn .icon, .btn--small .icon {
+    margin-left: 2rem; }
+
+.btn--small {
+  font-size: 1.5rem;
+  max-width: 10rem;
+  padding: 0.8rem 1rem; }
+
+.collapsible__header {
+  cursor: pointer; }
+
+.collapsible__body {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; }
+
+.collapsible--expanded .collapsible__body {
+  max-height: 100rem;
+  opacity: 1; }
+
+.side-overlay {
+  width: 30vw;
+  height: 100vh;
+  background-color: #b6b6b6;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0vw;
+  z-index: 10;
+  padding: 25rem 5rem;
+  color: #1a1a1a; }
+  .side-overlay .icon {
+    font-size: 3rem;
+    position: absolute;
+    top: 15%;
+    right: 25%; }
+  .side-overlay__text {
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem; }
+  .side-overlay__title {
+    margin: 3rem;
+    font-size: 3rem; }
+  .side-overlay .btn--small {
+    margin: auto; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 2.5rem; }
+  .header .logo {
+    width: 5rem;
+    position: relative;
+    top: 3px; }
+    .header .logo img {
+      width: 100%; }
+  .header .hamburger-icon {
+    font-size: 3rem; }
+    @media screen and (min-width: 1024px) {
+      .header .hamburger-icon {
+        display: none; } }
+  .header .side-menu-btn {
+    display: none; }
+  .header .main-nav {
+    width: 100%; }
+    @media screen and (min-width: 1024px) {
+      .header .main-nav {
+        width: auto; } }
+  @media screen and (min-width: 1024px) {
+    .header .side-menu-btn {
+      display: block;
+      font-size: 2.5rem; } }
+
+.banner {
+  width: 100%;
+  height: 90vh;
+  position: relative; }
+  .banner .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/background1.jpg");
+    filter: opacity(0.2);
+    z-index: -10; }
+  .banner__content {
+    position: absolute;
+    width: 80%;
+    bottom: 50%;
+    left: 10%;
+    transform: translate(0, 50%); }
+    @media screen and (min-width: 1024px) {
+      .banner__content {
+        bottom: 25%; } }
+  .banner__title {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    font-family: "Space Grotesk", sans-serif; }
+  .banner__description {
+    margin: 5rem 0;
+    font-size: 2rem;
+    font-family: "DM Sans", sans-serif; }

@@ -1,0 +1,18 @@
+.collapsible {
+  &__header {
+    cursor: pointer;
+  }
+
+  &__body {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+}
+.collapsible--expanded {
+  .collapsible__body {
+    max-height: 100rem;
+    opacity: 1;
+  }
+}

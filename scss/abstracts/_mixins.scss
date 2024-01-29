@@ -1,0 +1,16 @@
+@mixin flex-layout($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin response($key) {
+  $size: map-get(
+    $map: $breakpoints,
+    $key: $key,
+  );
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}

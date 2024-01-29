@@ -1,0 +1,29 @@
+.btn {
+  // background: linear-gradient(to right, black, white, 30%);
+
+  background: rgb(27, 27, 27);
+  background: linear-gradient(
+    90deg,
+    rgb(82, 82, 82) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  @include flex-layout;
+  padding: 1.2rem 2.6rem;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: black;
+
+  .icon {
+    margin-left: 2rem;
+  }
+}
+
+.btn--small {
+  @extend .btn;
+  font-size: 1.5rem;
+  max-width: 10rem;
+  padding: 0.8rem 1rem;
+}
