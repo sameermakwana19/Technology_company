@@ -3,11 +3,12 @@
   flex-wrap: wrap;
   // background-color: red;
   justify-content: space-between;
-  padding: 2rem 2.5rem;
+  padding: 2rem 3rem;
   .logo {
     width: 5rem;
     position: relative;
     top: 3px;
+    padding: 1rem 0;
 
     img {
       width: 100%;
@@ -22,7 +23,11 @@
     }
   }
 
-  .side-menu-btn {
+  .cross-icon {
+    display: none;
+  }
+
+  .side-overlay-btn {
     display: none;
   }
 
@@ -34,9 +39,14 @@
   }
 
   @include response(large) {
-    .side-menu-btn {
+    .side-overlay-btn {
       display: block;
       font-size: 2.5rem;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        transform: scaleX(1.4);
+      }
     }
   }
 }

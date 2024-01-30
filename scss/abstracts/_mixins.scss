@@ -14,3 +14,9 @@
     @content;
   }
 }
+
+@mixin padding {
+  @include response(large) {
+    padding: 5rem 0;
+  }
+}

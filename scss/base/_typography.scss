@@ -1,5 +1,11 @@
 html {
   font-size: 62.5%;
+  @include response(large) {
+    font-size: 68.75%;
+  }
+  // @include response(xlarge) {
+  //   font-size: 75%;
+  // }
 }
 
 * {

@@ -1,0 +1,20 @@
+.technology-text {
+  padding: 8rem 0;
+  color: white;
+
+  .text-container {
+    width: 100%;
+    padding: 0 2.5rem;
+    text-align: center;
+    margin: auto;
+    max-width: 120rem;
+  }
+
+  .text {
+    font-size: 3.4rem;
+    @include response(large) {
+      width: 70%;
+      margin: auto;
+    }
+  }
+}

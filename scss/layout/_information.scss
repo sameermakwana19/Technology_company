@@ -1,0 +1,8 @@
+.information {
+  padding: 8rem 0;
+  @include padding;
+
+  #second-icon {
+    transform: rotateZ(42deg);
+  }
+}

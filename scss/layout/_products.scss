@@ -1,0 +1,66 @@
+.product {
+  margin-bottom: 3.5rem;
+  .container {
+    max-width: 54rem;
+    padding: 0 1.2rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @include response(medium) {
+      max-width: 72rem;
+    }
+
+    @include response(large) {
+      max-width: 114rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+    }
+    @include response(xlarge) {
+      max-width: 132rem;
+    }
+  }
+  .card {
+    padding: 0 1rem;
+    margin-bottom: 10rem;
+
+    @include response(large) {
+      @include flex-layout;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+
+  .card__heading {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  .card__description {
+    margin-top: 2.5rem;
+    font-size: 1.7rem;
+    color: $color-text;
+  }
+
+  .btn {
+    margin-top: 4rem;
+    font-size: 1.7rem;
+  }
+
+  .product__image {
+    padding: 0 1.2rem;
+    width: 100%;
+    height: 40rem;
+
+    @include response(large) {
+      order: -1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

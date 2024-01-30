@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Space+Grotesk:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -20,6 +20,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <script
+      src="https://kit.fontawesome.com/f9bc1e45fb.js"
+      crossorigin="anonymous"
+    ></script> -->
   </head>
   <body>
     <!-- header Component -->
@@ -31,17 +35,18 @@
       <div class="hamburger-icon collapsible__header">
         <i class="fa-solid fa-bars"></i>
       </div>
-      <nav class="main-nav collapsible">
-        <ul class="main-nav-list collapsible__body">
-          <li class="main-nav-item">Home</li>
-          <li class="main-nav-item">Products</li>
-          <li class="main-nav-item">About Us</li>
-          <li class="main-nav-item">Price</li>
-          <li class="main-nav-item">Contacts</li>
+      <nav class="main-nav">
+        <!-- //collapsible -->
+        <ul class="main-nav__list collapsible__body">
+          <li class="main-nav__item">Home</li>
+          <li class="main-nav__item">Products</li>
+          <li class="main-nav__item">About Us</li>
+          <li class="main-nav__item">Price</li>
+          <li class="main-nav__item">Contacts</li>
           <li class="btn">See Now</li>
         </ul>
       </nav>
-      <div class="side-menu-btn"><i class="fa-solid fa-grip-lines"></i></div>
+      <div class="side-overlay-btn"><i class="fa-solid fa-grip-lines"></i></div>
     </header>
     <!-- End of Header components -->
 
@@ -65,26 +70,9 @@
     </div>
     <!-- End of Hero Component -->
 
-    <!-- About collapsible  -->
-
-    <!-- <div class="collapsible">
-      <div class="collapsible__header">Item</div>
-      <div class="collapsible__body">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          blanditiis ipsa provident voluptatum hic in, corporis esse quisquam!
-          Laborum eos iusto, autem animi molestiae earum adipisci repellat dicta
-          atque, veniam magni impedit? Ut magni dolores illum nobis esse, quos
-          necessitatibus incidunt tempora officiis consequuntur facere, in
-          itaque odio ipsa atque.
-        </p>
-      </div>
-    </div> -->
-    <!-- end of collapsible  -->
-
     <!-- side-overlay -->
     <div class="side-overlay">
-      <div class="icon">
+      <div class="cross-icon">
         <i class="fa-solid fa-xmark"></i>
       </div>
       <div class="side-overlay__text">
@@ -96,6 +84,314 @@
       <div class="btn--small">See Now</div>
     </div>
     <!-- end of side-overlay -->
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="feature-container">
+        <div class="feature">
+          <a href="#" class="feature__link">
+            <div class="feature__img">
+              <img src="/assets/buds.jpg" alt="buds image" />
+            </div>
+            <h2 class="feature__title">Buds</h2>
+          </a>
+        </div>
+        <div class="feature">
+          <a href="#" class="feature__link">
+            <div class="feature__img">
+              <img src="/assets/smartphone.jpg" alt="buds image" />
+            </div>
+            <h2 class="feature__title">Smartphones</h2>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End of features section -->
+
+    <!-- information section -->
+    <section class="information">
+      <div class="card-container">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-computer"></i>
+          </div>
+          <h2 class="card__heading">Technologies</h2>
+          <p class="card__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
+            et.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-link" id="second-icon"></i>
+          </div>
+          <h2 class="card__heading">Future</h2>
+          <p class="card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+            architecto. et.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <h2 class="card__heading">Gadgets</h2>
+          <p class="card__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
+            et.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End of information section -->
+
+    <!-- image Grid section  -->
+    <section class="updates">
+      <div class="grid-container">
+        <div class="updates-card">
+          <a href="#" class="updates-card__link">
+            <div class="img-container">
+              <img src="/assets/image1-grid1.jpg" class="card__img" />
+            </div>
+            <div class="content">
+              <div class="content-overlay"></div>
+              <div class="date-container">
+                <p class="card__date">02 MARCH 2030</p>
+              </div>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+              <p class="card__author">by Sara Lewis</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="updates-card">
+          <a href="#" class="updates-card__link">
+            <div class="img-container">
+              <img src="/assets/image2-grid1.jpg" class="card__img" />
+            </div>
+            <div class="content">
+              <div class="content-overlay"></div>
+              <div class="date-container">
+                <p class="card__date">06 MARCH 2030</p>
+              </div>
+              <p class="card__description">
+                Distinctio, voluptatum. Lorem ipsum dolor sit amet.
+              </p>
+              <p class="card__author">by Ellen Perry</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="updates-card">
+          <a href="#" class="updates-card__link">
+            <div class="img-container">
+              <img src="/assets/image3-grid1.jpg" class="card__img" />
+            </div>
+            <div class="content">
+              <div class="content-overlay"></div>
+              <div class="date-container">
+                <p class="card__date">10 MARCH 2030</p>
+              </div>
+              <p class="card__description">
+                Earum, voluptatum. Lorem ipsum dolor sit amet.
+              </p>
+              <p class="card__author">by Robin Nichols</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="updates-card">
+          <a href="#" class="updates-card__link">
+            <div class="img-container">
+              <img src="/assets/image4-grid1.jpg" class="card__img" />
+            </div>
+            <div class="content">
+              <div class="content-overlay"></div>
+              <div class="date-container">
+                <p class="card__date">16 MARCH 2023</p>
+              </div>
+              <p class="card__description">
+                Doloribus voluptatum. Lorem ipsum dolor sit amet.
+              </p>
+              <p class="card__author">by Larry Pierce</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End of image grid -->
+
+    <!-- technology section -->
+    <section class="technology">
+      <div class="container">
+        <div class="header">
+          <h2 class="main-heading">
+            Major technology<br />
+            market leaders
+          </h2>
+          <p class="sub-heading">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+            consequatur cumque excepturi fugit nulla odio perferendis quae
+            recusandae soluta tempore.
+          </p>
+        </div>
+        <div class="content">
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card__heading">Molestias</h3>
+              <div class="card__description">
+                Perferendis provident recusandae sit suscipit, tenetur unde
+                voluptates.
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card__heading">Recusandae</h3>
+              <div class="card__description">
+                Asperiores cum cumque fugit nisi obcaecati quo sapiente vel.
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card__heading">Tenetur</h3>
+              <div class="card__description">
+                Non numquam possimus repellat sed sint veniam. Consectetur hic
+                laudantium.
+              </div>
+            </div>
+          </div>
+
+          <div class="img-container">
+            <img class="content__img" src="/assets/image1-grid1.jpg" />
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card__heading">Suscipit</h3>
+              <div class="card__description">
+                Possimus provident qui quo sit tenetur vero, voluptatum.
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card__heading">Praesentium</h3>
+              <div class="card__description">
+                Perferendis provident recusandae sit suscipit, tenetur unde
+                voluptates
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card__heading">Molestias</h3>
+              <div class="card__description">
+                Consectetur adipisicing elit est iusto, laborum molestias.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of technology section -->
+
+    <!-- Technology-text -->
+    <div class="technology-text">
+      <div class="text-container">
+        <p class="text">
+          Consectetur consequuntur ducimus, iusto laboriosam necessitatibus,
+          obcaecati perferendis porro qui repellat reprehenderit rerum. enim
+          inventore iure minus nostrum nulla.
+        </p>
+      </div>
+    </div>
+    <!-- End of technology text -->
+
+    <!-- showcase section -->
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase__img-container">
+          <img src="/assets/background1.jpg" alt="" />
+        </div>
+        <div class="showcase__content">
+          <div class="card-container">
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-regular fa-circle-user"></i>
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">
+                  Excellent<br />
+                  teamwork
+                </h2>
+                <p class="card__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maiores, et.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">
+                  New Design<br />
+                  approach
+                </h2>
+                <p class="card__description">
+                  Lorem ipsum, dolor sit amet adipisicing elit. Maiores, et.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+              <div class="card__content">
+                <h2 class="card__heading">Future<br />Technology</h2>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet. Maiores, et.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of showcase section -->
+
+    <!-- product section -->
+    <section class="product">
+      <div class="container">
+        <div class="card">
+          <div class="card__content">
+            <h2 class="card__heading">Products that matches your interests</h2>
+            <p class="card__description">
+              Dolor sit amet, consectetur adipisicing elit. Aliquid autem beatae
+              consectetur cumque dolores dolorum enim inventore iure minus
+              nostrum nulla numquam.
+            </p>
+            <button class="btn">
+              See more
+              <div class="icon">
+                <i class="fa-solid fa-play" class="arrow-icon"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="product__image">
+          <img src="/assets/product.jpg" alt="drone img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- end of product section -->
   </body>
+
   <script src="js/index.js"></script>
 </html>

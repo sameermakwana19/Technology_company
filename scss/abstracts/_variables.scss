@@ -4,8 +4,11 @@ $font-md: 2rem;
 
 $color-primary: rgb(182, 182, 182);
 
+$color-text: #b6b6b6;
+
 $breakpoints: (
   "small": 320px,
   "medium": 768px,
   "large": 1024px,
+  "xlarge": 1400px,
 );

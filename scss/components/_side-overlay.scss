@@ -1,22 +1,29 @@
 .side-overlay {
-  width: 30vw;
+  width: 30%;
   height: 100vh;
   background-color: $color-primary;
   text-align: center;
   position: fixed;
   top: 0;
-  right: 0vw;
+  right: -30%;
+  transition: all 0.3s ease-in-out;
 
   z-index: 10;
   padding: 25rem 5rem;
   color: lighten(black, 10%);
   // position: relative;
 
-  .icon {
+  .cross-icon {
     font-size: 3rem;
+    color: lighten($color: #000000, $amount: 30%);
     position: absolute;
-    top: 15%;
-    right: 25%;
+    top: 17%;
+    right: 20%;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: black;
+    }
   }
 
   &__text {
@@ -26,10 +33,14 @@
 
   &__title {
     margin: 3rem;
-    font-size: $font-lg;
+    font-size: 3.4rem;
   }
 
   .btn--small {
     margin: auto;
   }
+}
+
+.side-overlay--expanded {
+  right: 0;
 }

@@ -1,0 +1,23 @@
+.updates {
+  padding: 8rem 0;
+  @include padding;
+
+  .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 51rem);
+
+    @include response(medium) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 51rem);
+      column-gap: 2.5rem;
+    }
+
+    @include response(large) {
+      grid-template-rows: 51rem;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 3rem;
+    }
+  }
+}

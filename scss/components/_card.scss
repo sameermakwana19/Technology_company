@@ -1,0 +1,47 @@
+.card-container {
+  max-width: 54rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.3rem;
+
+  @include response(medium) {
+    max-width: 70rem;
+  }
+
+  @include response(large) {
+    @include flex-layout;
+    max-width: 104rem;
+  }
+
+  @include response(xlarge) {
+    max-width: 132rem;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 5.5rem;
+    padding: 1.2rem;
+  }
+
+  .card-icon {
+    margin-bottom: 1.8rem;
+    i {
+      font-size: 8.2rem;
+      color: gray;
+    }
+  }
+
+  .card__heading {
+    margin-bottom: 1.8rem;
+    font-size: 3.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .card__description {
+    color: $color-text;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
