@@ -3,7 +3,6 @@
   padding: 8rem 0;
 
   .card-container {
-    width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 0 3rem;
@@ -13,9 +12,7 @@
     @include response(medium) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      justify-content: space-between;
-      justify-items: space-between;
-      align-items: center;
+      align-items: flex-start;
     }
 
     @include response(large) {
@@ -24,9 +21,6 @@
     }
   }
   .card {
-    // li {
-
-    // }
     li {
       padding: 0;
       margin: 0;

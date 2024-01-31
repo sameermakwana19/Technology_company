@@ -13,13 +13,11 @@
 
     @include response(medium) {
       justify-content: center;
-      gap: 6rem;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 10.8rem);
     }
     @include response(large) {
       justify-content: center;
-
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: 10.8rem;
     }

@@ -1,7 +1,6 @@
 .header {
   @include flex-layout;
   flex-wrap: wrap;
-  // background-color: red;
   justify-content: space-between;
   padding: 2rem 3rem;
   .logo {
