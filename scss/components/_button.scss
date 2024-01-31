@@ -1,12 +1,22 @@
 .btn {
   // background: linear-gradient(to right, black, white, 30%);
 
+  font-family: "Space Grotesk", sans-serif;
   background: rgb(27, 27, 27);
+
   background: linear-gradient(
     90deg,
     rgb(82, 82, 82) 0%,
     rgba(255, 255, 255, 1) 100%
   );
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(82, 82, 82) 100%
+    );
+  }
   @include flex-layout;
   padding: 1.2rem 2.6rem;
   border-radius: 30px;

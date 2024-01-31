@@ -1,0 +1,118 @@
+.contact-us {
+  width: 100%;
+
+  .container {
+    padding: 0 1.5rem;
+    margin: auto;
+
+    @include response(medium) {
+      max-width: 72rem;
+    }
+
+    @include response(large) {
+      max-width: 102rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include response(xlarge) {
+      max-width: 132rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .content {
+    text-align: left;
+
+    @include response(large) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .main-heading {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    .sub-heading {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .card-container {
+      margin: 0;
+      @include flex-layout;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @include response(medium) {
+        flex-direction: row;
+      }
+    }
+    .card {
+      margin: 0 0.5rem 3rem;
+    }
+
+    .card__heading {
+      font-size: 1.7rem;
+    }
+  }
+
+  form {
+    padding: 5rem 2.5rem;
+    display: grid;
+
+    @include response(large) {
+      padding-top: 2.5rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 2rem;
+    }
+
+    input,
+    textarea {
+      // color: lighten($color-text, 100%);
+      color: white;
+      font-size: 1.6rem;
+      width: 100%;
+      background-color: transparent;
+      outline: none;
+      padding: 1rem 1.3rem;
+      margin-bottom: 2.4rem;
+      border: 0;
+      border-bottom: 1px solid darken($color-primary, 50%);
+    }
+
+    textarea {
+      @include response(large) {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+      }
+    }
+
+    .email {
+      @include response(large) {
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+      }
+    }
+
+    .btn {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-top: 5rem;
+      margin-left: auto;
+      @include response(large) {
+        width: 80%;
+
+        grid-column: 2 / -1;
+        grid-row: 3 / 4;
+        margin-left: auto;
+      }
+    }
+  }
+}

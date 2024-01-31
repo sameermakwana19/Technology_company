@@ -20,3 +20,30 @@
     padding: 5rem 0;
   }
 }
+
+@mixin slideshow-animation {
+  @keyframes animation {
+    0% {
+      opacity: 0%;
+      right: -100%;
+    }
+    2% {
+      opacity: 1;
+      right: 0;
+    }
+    18% {
+      opacity: 1;
+      right: 0;
+    }
+    20% {
+      opacity: 0;
+      left: 0;
+    }
+    100% {
+      opacity: 0;
+      left: -100%;
+    }
+  }
+
+  animation: animation 10s infinite ease-in-out;
+}

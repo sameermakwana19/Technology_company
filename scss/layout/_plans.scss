@@ -1,0 +1,27 @@
+.plans {
+  padding: 5rem 0;
+  @include padding;
+
+  .plan-cards-container {
+    padding: 0 2.4rem;
+    width: 100%;
+    margin: auto;
+    max-width: 65rem;
+    @include response(large) {
+      max-width: 100%;
+      padding: 0 5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+  }
+
+  .highlighted {
+    background: linear-gradient(darken($color-primary, 20%), $color-primary);
+    color: black;
+
+    .plan__duration {
+      color: black;
+    }
+  }
+}

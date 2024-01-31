@@ -3,9 +3,9 @@ html {
   @include response(large) {
     font-size: 68.75%;
   }
-  // @include response(xlarge) {
-  //   font-size: 75%;
-  // }
+  @include response(xlarge) {
+    font-size: 75%;
+  }
 }
 
 * {

@@ -1,0 +1,52 @@
+.plan-card {
+  padding: 4.5rem 3rem 6rem;
+  margin-bottom: 4rem;
+  border: 1px solid darken($color-primary, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .plan__duration {
+    font-size: 1.6rem;
+    color: $color-text;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .plan__price {
+    height: min-content;
+    font-size: 6rem;
+    text-justify: stretch;
+    @include flex-layout;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    top: -0.7rem;
+
+    span {
+      margin: 0 0.5rem;
+      font-size: 3rem;
+    }
+  }
+
+  .plan__title {
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .plan-benefits {
+    li {
+      margin: 1rem 0;
+      padding: 0;
+      color: $color-text;
+      font-size: 1.7rem;
+    }
+  }
+  .btn {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    width: fit-content;
+    font-weight: 400;
+  }
+}

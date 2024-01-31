@@ -25,3 +25,6 @@ side_overlay_close_btn.addEventListener('click',function(){
 });
 
 
+const next_slide = document.getElementById('next-slide');
+
+
