@@ -1,9 +1,12 @@
 .header {
+  background: black;
   @include flex-layout;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem 3rem;
+
   .logo {
+    background: transparent;
     width: 5rem;
     position: relative;
     top: 3px;
@@ -48,4 +51,11 @@
       }
     }
   }
+}
+
+.main-header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  left: 0;
 }

@@ -42,6 +42,9 @@
 
     .text {
       margin: 1rem 0;
+      &:hover {
+        color: white;
+      }
     }
     .copy-text {
       font-weight: 500;

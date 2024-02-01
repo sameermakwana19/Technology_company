@@ -1,6 +1,7 @@
 .images {
   padding: 8rem 0;
   // @include padding;
+  @include border-bottom;
 
   .container {
     width: 100%;

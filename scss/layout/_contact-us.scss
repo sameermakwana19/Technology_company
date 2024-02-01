@@ -1,5 +1,6 @@
 .contact-us {
   width: 100%;
+  @include border-bottom;
 
   .container {
     padding: 0 1.5rem;

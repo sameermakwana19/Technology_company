@@ -3,6 +3,7 @@
   min-height: 95vh;
   padding: 8rem 0 2rem;
   margin-bottom: 8rem;
+  @include border-bottom;
   @include padding;
 
   .container {

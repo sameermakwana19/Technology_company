@@ -1,6 +1,7 @@
 .photo-gallery {
   width: 100%;
   padding: 8rem 0;
+  @include border-bottom;
 
   .container {
     display: grid;

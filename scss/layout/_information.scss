@@ -1,6 +1,7 @@
 .information {
   padding: 8rem 0;
   @include padding;
+  @include border-bottom;
 
   #second-icon {
     transform: rotateZ(42deg);

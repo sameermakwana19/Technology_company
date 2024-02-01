@@ -1,6 +1,7 @@
 .updates {
   padding: 8rem 0;
   @include padding;
+  @include border-bottom;
 
   .grid-container {
     width: 100%;

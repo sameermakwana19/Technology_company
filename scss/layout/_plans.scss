@@ -1,6 +1,7 @@
 .plans {
   padding: 5rem 0;
   @include padding;
+  @include border-bottom;
 
   .plan-cards-container {
     padding: 0 2.4rem;

@@ -21,6 +21,14 @@
   }
 }
 
+@mixin border-bottom {
+  border-bottom: 1px solid $color-primary;
+
+  @include response(medium) {
+    border: none;
+  }
+}
+
 @mixin slideshow-animation {
   @keyframes animation {
     0% {

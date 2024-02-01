@@ -2,6 +2,7 @@
   padding: 8rem 0;
   width: 100%;
   // @include padding;
+  @include border-bottom;
 
   .container {
     padding: 0 3rem;

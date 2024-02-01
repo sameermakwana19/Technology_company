@@ -1,5 +1,7 @@
 .product {
   margin-bottom: 3.5rem;
+  padding-bottom: 5rem;
+  @include border-bottom;
   .container {
     max-width: 54rem;
     padding: 0 1.2rem;
